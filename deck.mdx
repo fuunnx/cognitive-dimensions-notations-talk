@@ -1,5 +1,9 @@
 import { Notes } from "mdx-deck";
-export { dark as theme } from "mdx-deck/themes";
+import React from "react";
+import { DefinitionLayout } from "./DefinitionLayout";
+import { ColumnsLayout } from "./ColumnsLayout";
+import { ImageLayout } from "./ImageLayout";
+export { theme } from "./theme";
 
 # Evaluations des interfaces et dimensions cognitives
 
@@ -17,14 +21,16 @@ export { dark as theme } from "mdx-deck/themes";
 - escalade
 - Vjing ?
 
-// photo de moi en Jacky à l'escalade
-
 <Notes>
 
 C'est vraiment la première fois que je parle devant autant de monde. Merci
 d'être indulgents
 
 </Notes>
+
+---
+
+<ImageLayout src="/test.png">photo de moi en Jacky à l'escalade</ImageLayout>
 
 ---
 
@@ -101,8 +107,6 @@ Désolé pour les traductions un peu chelou depuis l'anglais. J'ai gardé le mot
 
 </Notes>
 
-# 14 dimensions
-
 1. Viscosité
 2. Visibilité
 3. Engagement prématuré
@@ -120,11 +124,9 @@ Désolé pour les traductions un peu chelou depuis l'anglais. J'ai gardé le mot
 
 ---
 
-1. Viscosité
-
-Anglais>
-
-Def>
+<DefinitionLayout title="1. Viscosité" translation="Viscosity">
+  Lorem ipsum dolor sit amet
+</DefinitionLayout>
 
 ---
 
