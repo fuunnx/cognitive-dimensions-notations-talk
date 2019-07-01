@@ -18,7 +18,6 @@ export const theme = {
     overflowX: "auto"
   },
   heading: {
-    // textTransform: "uppercase",
     fontWeight: "bold",
     lineHeight: 1,
     fontFamily: headingFont

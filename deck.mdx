@@ -1,84 +1,141 @@
 import { Notes } from "mdx-deck";
 import React from "react";
+import { ExamplesLayout } from "./ExamplesLayout";
 import { DefinitionLayout } from "./DefinitionLayout";
 import { ColumnsLayout } from "./ColumnsLayout";
 import { ImageLayout } from "./ImageLayout";
 export { theme } from "./theme";
 
-# Evaluations des interfaces et dimensions cognitives
+<iframe
+  style={{
+    width: "100vw",
+    height: "100vh",
+    position: "fixed",
+    top: 0,
+    left: 0,
+    pointerEvents: "none"
+  }}
+  src="http://geraudhenrion.io/"
+/>
 
 ---
 
-# Géraud Henrion
+- 4ans graphiste web
+- 2ans développeur / designer
 
-- http://geraudhenrion.io/
-- https://twitter.com/
-
-- graphiste web pendant 4 ans
-- développeur et designer chez Nartex depuis bientôt 2 ans
-- intéressé par l'intersection entre le design et le code
-- j'ai jamais su choisir
-- escalade
-- Vjing ?
+* intéressé par
+  l'intersection entre le design et le code
+* art génératif
+* escalade
 
 <Notes>
 
 C'est vraiment la première fois que je parle devant autant de monde. Merci
-d'être indulgents
+d'être indulgents.
+
+Y'a-til des designers dans la salle ?
+
+Y'a-til des développeurs dans la salle ?
 
 </Notes>
 
 ---
 
-<ImageLayout src="/test.png">photo de moi en Jacky à l'escalade</ImageLayout>
-
----
-
-# Nartex
+<div
+  style={{ backgroundColor: "white", padding: "40px", display: "inline-block" }}
+>
+  <img src="./nartex.png" />
+</div>
 
 - bâtisseur d'applications mobiles à Mulhouse
 - plus de 200 références
-- Sinimo
+- tourisme, industrie, BtoB…
 
 ---
 
-# Dimensions Cognitives des Notations
+<ImageLayout src="./background2.png" opacity={0.7}>
+
+# Dimensions Cognitives des Notations
 
 <i>Cognitive Dimensions of Notations</i>
 
-> Une méthodologie pour l'évaluation des interfaces
+Une méthodologie pour l'évaluation des interfaces
+
+</ImageLayout>
 
 <Notes>
-  J'ai encore jamais appliqué ça professionnellement mais j'ai trouvé ça très
-  instructif
-</Notes>
 
-<Notes>
-  Ça a beaucoup intéressé ma copine alors qu'elle n'est pas du métier
-</Notes>
+Un peu putaclick je l'avoue
 
-<Notes>
-  Et pour les développeurs, on constate qu'on peut faire beaucoup de parallèles
-  avec comment concevoir un code de qualité
-</Notes>
+J'ai encore jamais appliqué ça professionnellement mais j'ai trouvé ça très instructif
 
-<Notes>
-  Aussi je ne suis pas un expert du sujet, n'hésitez pas à me faire des
-  remarques
-</Notes>
+Ça a beaucoup intéressé ma copine alors qu'elle n'est pas du métier
 
-<Notes>
-  Et surtout je vais rendre ça interactif en vous demandant de donner des
-  exemples (et oui haha je serais pas tout seul à parler)
+Et pour les développeurs, on constate qu'on peut faire beaucoup de parallèles avec comment concevoir un code de qualité.
+
+Y'a-til des gens qui connaissent ?
+
+Aussi je ne suis pas un expert du sujet, n'hésitez pas à me faire des remarques
+
+Et surtout je vais rendre ça interactif en vous demandant de donner des
+exemples (et oui haha je serais pas tout seul à parler)
+
 </Notes>
 
 ---
 
-Dimensions → Axes d'évaluation
+# Une approche légère
+
+- Conçue pour une évaluation en surface
+- Évalue l'ergonomie
+  - d'une interface utilisateur
+  - d'un language de programmation
+- Fourni un vocabulaire partagé
+
+<Notes>
+
+Un peu de contexte
+
+C'est important d'avoir un vocabulaire partagé. Par exemple la notion de téléphone est différente selon les époques. Ou celle de petit déjeuner l'est selon les cultures. Je veux m'assurer que quand je vais travailler avec quelqu'un on soit d'accord là dessus.
+
+- Parler de reproduction à un biologiste / à ma copine
+- Différence entre théorie dans le langage courant / en science
+
+</Notes>
 
 ---
 
-Cognitif → En rapport avec le cerveau. Cete méthodologie a été conçue par des chercheurs du domaine. Mais est destinée à tout public.
+<DefinitionLayout
+  title="Dimensions"
+  translation="→ Axes d'évaluation"
+>
+
+- Bases pour évaluer l'existant
+- Offre des Pistes d'exploration
+- Maximiser un axe peut en influencer un autre
+- Obligation de compromis
+
+</DefinitionLayout>
+
+<Notes>
+
+Beaucoup de choses qu'on fait déjà instinctivement en design / bonnes pratiques
+
+</Notes>
+
+---
+
+<DefinitionLayout
+  title="Cognitif"
+  translation="→ En rapport avec le cerveau 😅"
+>
+
+- Méthodologie conçue par des chercheurs en sciences cognitives
+- Thomas R.G. Green and Marian Petre
+- Fin des années 90
+- Destinée à un public large
+
+</DefinitionLayout>
 
 <Notes>
 
@@ -89,23 +146,49 @@ développeurs, aux utilisateurs et aux designers
 
 ---
 
-Notation → Tout élément <i>(physique ou virtuel, pas nécessairement visuel)</i> servant à apporter des modifications à un système d'information
+<DefinitionLayout
+  backgroundSrc="./Beethoven_Ninth_Symphony.png"
+  backgroundOpacity={0.3}
+  title="Notation"
+  translation="→ Un système d'images, symboles, lettres et expressions servant à représenter de l'information"
+>
 
-- Microsoft Word
-- E-commerce
-- Téléphone + carnet d'adresse
+- Souvent propre à la discipline
+- Défini par convention
+
+</DefinitionLayout>
+
+<Notes>
+
+C'est vague ^^
+
+In linguistics and semiotics, a notation is a system of graphics or symbols, characters and abbreviated expressions, used (for example) in artistic and scientific disciplines to represent technical facts and quantities by convention.[1][2] Therefore, a notation is a collection of related symbols that are each given an arbitrary meaning, created to facilitate structured communication within a domain knowledge or field of study.
+
+Standard notations refer to general agreements in the way things are written or denoted. The term is generally used in technical and scientific areas of study like mathematics, physics, chemistry and biology, but can also be seen in areas like business, economics and music.
+
+</Notes>
+
+---
+
+- Formule mathématique ou chimiques
+- Partition de musique
+- Interface graphique
+- Brochure, manuel
+- Langage de programmation
 
 ---
 
 <Notes>
 
-Je vais tenter de brosser ça rapidement mais en gardant ça intelligible et surtout en donnant des exemples.
+Rentrons dans le vif du sujet
 
-Après, j'ai trouvé une fiche méthodologie sur internet qu'on peut remplir sous la forme d'atelier si y'en a qui veulent essayer pendant la pizza ou faire des devoirs à la maison
-
-Désolé pour les traductions un peu chelou depuis l'anglais. J'ai gardé le mot originel pour un meilleur contexte.
+(Microsoft Word, Application mobile…)
 
 </Notes>
+
+# 14 axes d'évaluation
+
+---
 
 1. Viscosité
 2. Visibilité
@@ -122,179 +205,526 @@ Désolé pour les traductions un peu chelou depuis l'anglais. J'ai gardé le mot
 13. Provisionabilité
 14. Évaluation progressive
 
+<Notes>
+
+Je vais tenter de brosser ça rapidement mais en gardant ça intelligible et surtout en donnant des exemples.
+
+Après, j'ai trouvé une fiche méthodologie sur internet qu'on peut remplir sous la forme d'atelier si y'en a qui veulent essayer pendant la pizza ou faire des devoirs à la maison
+
+Désolé pour les traductions un peu chelou depuis l'anglais. J'ai gardé le mot originel pour un meilleur contexte.
+
+</Notes>
+
 ---
 
-<DefinitionLayout title="1. Viscosité" translation="Viscosity">
-  Lorem ipsum dolor sit amet
+<DefinitionLayout
+  num={1}
+  title="Viscosité"
+  translation="Résistance au changement"
+>
+  L'effort requis pour apporter une modification
 </DefinitionLayout>
 
----
+<Notes>
 
-exemple(s)
+- Le moins = le mieux
+- La quantité de travail que va devoir fournir l'utilisateur pour accomplir son objectif.
 
----
-
-2. Visibilité
-
-Anglais>
-
-Def>
+</Notes>
 
 ---
 
-exemple(s)
+<ExamplesLayout backgroundSrc="background2.png" backgroundOpacity={0.5}>
 
----
+Changer la couleur de tous les titres dans Word VS Styles globaux
 
-3. Engagement prématuré
+Processus d'inscription à rallonge VS
+Authentification tierce
 
-Anglais>
+Editer en lieu et place VS Changer de page
 
-Def>
-
----
-
-exemple(s)
-
----
-
-4. Relations cachées
-
-Anglais>
-
-Def>
-
----
-
-exemple(s)
-
----
-
-5. Expressivité des rôles
-
-Anglais>
-
-Def>
-
----
-
-exemple(s)
-
----
-
-6. Tendance à engendrer des erreurs
-
-Anglais>
-
-Def>
-
----
-
-exemple(s)
-
----
-
-7. Abstraction
-
-Anglais>
-
-Def>
-
----
-
-exemple(s)
-
----
-
-8. Notation secondaire
-
-Anglais>
-
-Def>
-
----
-
-exemple(s)
-
----
-
-9. Proximité de la correspondance
-
-Anglais>
-
-Def>
-
----
-
-exemple(s)
-
----
-
-10. Cohérence
-
-Anglais>
-
-Def>
-
----
-
-exemple(s)
-
----
-
-11. Taux de diffusion
-
-Anglais>
-
-Def>
-
----
-
-exemple(s)
-
----
-
-12. Opérations mentales difficiles
-
-Anglais>
-
-Def>
-
----
-
-exemple(s)
-
----
-
-13. Provisionability
-
-Anglais>
-
-Def>
-
----
-
-exemple(s)
-
----
-
-14. Évaluation progressive
-
-Anglais>
-
-Def>
-
----
-
-exemple(s)
-
----
-
-Merci. Questions ?
-
-<Notes>J'espère que vous avez apprécia autant que moi parler de ce sujet</Notes>
+</ExamplesLayout>
 
 <Notes>
-  Je rappelle que pour ceux qui le souhaitents j'a ides fiches de méthodlogie
-  (en anglais) pour pratiquer après.
+
+- Mais introduit un nouveau concept (une abstraction)
+- Site des impôts
+
+</Notes>
+
+---
+
+<DefinitionLayout num={2} title="Visibilité" translation="Visibility">
+  Avec quelle facilité l'utilisateur va pouvoir accéder, identifier et rendre
+  visibles les éléments dont il a besoin ?
+</DefinitionLayout>
+
+<Notes>
+
+« How readily can required parts of the notation be identified, accessed and made visible? »
+
+</Notes>
+
+---
+
+<ExamplesLayout backgroundSrc="background2.png" backgroundOpacity={0.5}>
+
+Hamburger menu VS Bottom menu
+
+</ExamplesLayout>
+
+<Notes>
+
+- Menus à la navigation trop profonde VS Menus très aplatis
+
+</Notes>
+
+---
+
+<DefinitionLayout
+  num={3}
+  title="Engagement prématuré"
+  translation="Premature commitment"
+>
+
+L'utilisateur doit-il prendre des décisions avant même d'avoir toutes les informations nécessaires ?
+
+Peut-on corriger nos décisions plus tard ?
+
+Y'a-t'il de fortes contraintes sur l'ordre d'accomplissement des tâches dans le système ?
+
+</DefinitionLayout>
+
+<Notes>
+
+Ça ne devrait pas arriver.
+
+Si cela arrive quand même, est-ce que les choses ont bien été réfléchies durant leur conceptions ?
+
+</Notes>
+
+---
+
+<ExamplesLayout backgroundSrc="background2.png" backgroundOpacity={0.5}>
+
+Actions irremédiables VS Bouton "annuler"
+
+Processus linéarisé VS libre
+
+Acheter sans tester VS période d'essai gratuite
+
+</ExamplesLayout>
+
+<Notes>
+
+- Créer un compte avant de passer commande
+- Popup : Inscrivez-vous à ma newsletter
+- Ne pas afficher le prix d'un produit avant de l'ajouter au panier
+- Ne pas afficher le prix de la livraison avant d'avoir accompli toutes les étapes
+- Formulaires à rallonge
+- Processus linéaire "tunnel"
+
+</Notes>
+
+---
+
+<DefinitionLayout
+  num={4}
+  title="Relations cachées"
+  translation="Hidden dependencies"
+>
+
+Les relations entre les éléments sont-elles visibles ou cachées ?
+
+Toutes les relations sont-telles indiquées dans les deux sens ?
+
+Est-ce qu'un changement à un endroit a des conséquences inattendues ?
+
+</DefinitionLayout>
+
+<Notes>
+
+> Are dependencies between entities in the notation visible or hidden? Is every dependency indicated in both directions? Does a change in one area of the notation lead to unexpected consequences?
+
+Si plusieurs parties d'un système dépendent l'une de l'autre, cette relation ne devrai pas être cachée
+
+</Notes>
+
+---
+
+<ExamplesLayout backgroundSrc="background2.png" backgroundOpacity={0.5}>
+  Dépendance d'une cellule dans Excel VS Impact de cette cellule sur d'autres
+</ExamplesLayout>
+
+<Notes>
+
+Dans excel on peut sélectionner une cellule et voir quelles cellules l'influencent (elle dépend de)
+
+Tandis que dans l'autre sens, on ne sait pas quels impact elle a sur d'autres
+
+</Notes>
+
+---
+
+<DefinitionLayout
+  num={5}
+  title="Expressivité des rôles"
+  translation="Roles expressiveness"
+>
+
+Quel est le niveau d'évidence du rôle de chaque élément dans le système ?
+
+</DefinitionLayout>
+
+<Notes>
+
+> How obvious is the role of each component of the notation in the solution as a whole?
+
+Le rôle d'un élément doit être évident, ou du moins facilement et rapidement inferré par l'utilisateur
+
+L'utilisateur ne devrait pas être confus quand à l'utilisation des éléments. 2 éléments avec un rôle différent ne devraient pas être identiques.
+
+</Notes>
+
+---
+
+<ExamplesLayout backgroundSrc="background2.png" backgroundOpacity={0.5}>
+
+Confusion entre Titres soulignés et Liens
+
+Texte des boutons peu explicites
+
+</ExamplesLayout>
+
+---
+
+<DefinitionLayout
+  num={6}
+  title="Invitation aux erreur"
+  translation="Error proneness"
+>
+
+En quelles proportions la notation donne-t-elle la possibilité de faire des erreurs ?
+
+</DefinitionLayout>
+
+<Notes>
+
+Beaucoup tendance à prendre les utilisateurs de haut sur ce point-là alors que c'est le rôle du designer d'éviter ces situations.
+
+Il faut savoir prendre en compte les limitations humaines.
+
+- Slips (lapsus, dérapage) -> l'intention est bonne mais il a "cliqué à côté" ou "oublié de"
+- Mistake (méprise) -> l'utilisateur a mal compris les implications de son action ou a un mauvais modèle conceptuel
+
+</Notes>
+
+---
+
+<ExamplesLayout backgroundSrc="background2.png" backgroundOpacity={0.5}>
+
+Zones d'actions trop proches et / ou de petite taille
+
+Incohérences (iversion de la position des boutons "valider" et "annuler")
+
+Trop faible différenciation
+
+</ExamplesLayout>
+
+---
+
+<DefinitionLayout num={7} title="Échelle d'abstraction" translation="Abstraction gradient">
+
+Plusieurs éléments qui groupés ensemble peuvent alors être traités comme un seul.
+
+</DefinitionLayout>
+
+<Notes>
+
+> What are the minimum and maximum levels of abstraction exposed by the notation? Can details be encapsulated?
+
+Permet d'encapsuler des détails.
+
+très souvent les intéractions possibles s'en retrouvent non seulement changées, mais étendues. (émergence => le tout est plus grand que la somme de ses parties)
+
+Mais cache aussi des éléments, peut par exemple créer des dépendances cachées ou réduire la visibilité.
+
+Permet de réduire d'autres axes, comme la viscosité
+
+</Notes>
+
+---
+
+<ExamplesLayout backgroundSrc="background2.png" backgroundOpacity={0.5}>
+
+Feuille de style (dans Word)
+
+Renseigner l'adresse à chaque commande VS Sélectionner parmi des adresse pré-remplies (Amazon)
+
+Les symboles dans Sketch
+
+Les blocs dans WordPress Gutenberg
+
+</ExamplesLayout>
+
+---
+
+<DefinitionLayout
+  num={8}
+  title="Notation secondaire"
+  translation="Secondary notation and escape from formalism"
+>
+  La notation permet-elle d'apporter des informations complémentaires sans en
+  transformer la nature ?
+</DefinitionLayout>
+
+<Notes>
+
+C'est l'ensemble des indicateurs qui vont permettre d'améliorer la lisibilité et la compréhension. Et qui échappe au formalisme habituel (rester dans les clous, très scolaire)
+
+On va parler de mise-en-page, de couleur, d'annotations…
+
+</Notes>
+
+---
+
+<ExamplesLayout backgroundSrc="background2.png" backgroundOpacity={0.5}>
+
+Tout condenser dans un paragraphe VS Sauter à la ligne et ajouter des titres
+
+Commentaires et annotations dans les PDF, écrire du texte en rouge dans un Word
+
+Nommer ses calques, Ajouter des icônes
+
+</ExamplesLayout>
+
+---
+
+<DefinitionLayout
+  num={9}
+  title="Proximité de la correspondance"
+  translation="Closeness of mapping"
+>
+  Dans quelle mesure la notation correspond-elle à ce qu'elle représente ?
+</DefinitionLayout>
+
+<Notes>
+
+Si chaque élément est proche de ce qu'il représente, alors ça fait moins de choses à apprendre.
+
+Et moins de traduction / correspondance à faire dans son esprit.
+
+</Notes>
+
+---
+
+<ExamplesLayout backgroundSrc="background2.png" backgroundOpacity={0.5}>
+
+Écrire son propre Html VS Utiliser WordPress Gutenberg
+
+Un tracé sur la carte VS Des coordonnées GPS
+
+Un calendrier VS Un champ texte pour une date
+
+</ExamplesLayout>
+
+---
+
+<DefinitionLayout num={10} title="Cohérence" translation="Consistency">
+  Une fois qu'une partie de la notation est apprise, avec quelle facilité le
+  reste peut-il être deviné ?
+</DefinitionLayout>
+
+<Notes>
+
+> After part of the notation has been learned, how much of the rest can be successfully guessed?
+
+L'utilisation de façon des faire (patterns) cohérentes permet à l'utilisateur de reconnaître les symboles familiers lors de leur navigation
+
+Plus c'est cohérent, moins l'utilisateur n'aura a réfléchir pour inferrer les usages sans charges mentale supplémentaire.
+
+</Notes>
+
+---
+
+<ExamplesLayout backgroundSrc="background2.png" backgroundOpacity={0.5}>
+
+Apparence des boutons changeante VS constante
+
+Position du menu, transitions de navigation / animations
+
+</ExamplesLayout>
+
+<Notes>
+
+Tout ce qui va surprendre / venir perturber les habitudes = mauvais
+
+</Notes>
+
+---
+
+<DefinitionLayout
+  num={11}
+  title="Concision / Diffusion"
+  translation="Terseness / Diffuseness"
+>
+  Faut-il beaucoup de symboles pour produire un résultat ou exprimer
+  quelquechose ?
+</DefinitionLayout>
+
+<Notes>
+
+C'est la "verbosité" du langage de votre interface.
+
+Plus c'est concis, mieux c'est ;) Mais forcément ça peut impliquer des impacts sur d'autres axes
+
+</Notes>
+
+---
+
+<ExamplesLayout backgroundSrc="background2.png" backgroundOpacity={0.5}>
+
+Message d'erreur bref et contextuel VS Message d'erreur flou et avec excuses et excès de politesse
+
+Menu déroulant pour une date, menu déroulant pour OUI/NON VS Calendrier, checkbox…
+
+Des instructions pour mot de passe verbeuses VS Un indicateur de sécurité
+
+Trop de photo et d'espace inutiles
+
+</ExamplesLayout>
+
+<Notes>
+  On remarque que la proximité de correspondance, faire des abstractions,
+  utiliser des notations secondaires peuvent aider à ce propos
+</Notes>
+
+---
+
+<DefinitionLayout
+  num={12}
+  title="Opérations mentales difficiles"
+  translation="Hard mental operations"
+>
+
+Y'a-t-il du calcul mental compliqué à accomplir pour l'utilisateur, qui serait du à la notation elle-même ?
+
+Doit-il utiliser ses doigts, prendre des notes ?
+
+</DefinitionLayout>
+
+<Notes>
+
+Lorsqu'on travaille il y a toujours une complexité intrinsèque au problème.
+
+Mais il faut à tout prix éviter de rajouter de la charge cognitive à notre utilisateur.
+
+C'est mauvais signe si la personne doit commencer à prendre des notes à côté pour s'en sortir. Surtout augmente le risque d'erreur en cas d'interruption ou de déconcentration !
+
+Genre faut pas que la personne ait l'impression de rsoudre un sudoku
+
+</Notes>
+
+---
+
+<ExamplesLayout backgroundSrc="background2.png" backgroundOpacity={0.5}>
+
+Composer un numéro de téléphone depuis la mémoire VS Utiliser le carnet d'adresse
+
+</ExamplesLayout>
+
+---
+
+<DefinitionLayout num={13} title="États provisoires, explorabilité" translation="Provisionability">
+
+La capacité avec laquelle il est possible d'expérimenter avec le système
+
+Avec quelle aisance peut-on tester, jouer, explorer ?
+
+Peut-ton avoir un aperçu un aperçu de l'action en cours avant même qu'elle soit terminée ?
+
+</DefinitionLayout>
+
+<Notes>
+
+C'est clairement un point très positif à avoir (selon les objectifs bien sûr). Permet à l'utilisateur d'explorer le domaine des solutions sans risque.
+
+</Notes>
+
+---
+
+<ExamplesLayout backgroundSrc="background2.png" backgroundOpacity={0.5}>
+
+Drag and Drop avec aperçu du résultat en temps réel
+
+Possibilité de revenir en arrière, de conserver les états antérieurs
+
+</ExamplesLayout>
+
+---
+
+<DefinitionLayout
+  num={14}
+  title="Évaluation progressive"
+  translation="Progressive evaluation"
+>
+
+Avec quelle aisance peut-on évaluer et obtenir des retours d'une solution incomplète ?
+
+Peut-on s'arrêter en plein milieu et se dire "Où en suis-je ?"
+
+</DefinitionLayout>
+
+<Notes>
+
+> How easy is it to evaluate and obtain feedback on an incomplete solution?
+
+capacité à prototyper
+
+avoir un "à peu près" à tout moment
+
+</Notes>
+
+---
+
+<ExamplesLayout backgroundSrc="background2.png" backgroundOpacity={0.5}>
+
+Bouton "Aperçu" dans les CMS, ou "Prototype" dans Sketch
+
+Barre de progression processus de paiement
+
+Complétion des infos du profil (Linkedin)
+
+</ExamplesLayout>
+
+<Notes>
+
+Il y a aussi la possibilité de faire son plan en avance dans un éditeur de texte (titres etc.)…
+
+</Notes>
+
+---
+
+1. Viscosité
+2. Visibilité
+3. Engagement prématuré
+4. Relations cachées
+5. Expressivité des rôles
+6. Tendance à engendrer des erreurs
+7. Abstraction
+8. Notation secondaire
+9. Proximité de la correspondance
+10. Cohérence
+11. Taux de diffusion
+12. Opérations mentales difficiles
+13. Provisionabilité
+14. Évaluation progressive
+
+<Notes>
+Merci. Questions ?
+
+J'espère que vous avez apprécié autant que moi parler de ce sujet
+
+Je rappelle que pour ceux qui le souhaitents j'a ides fiches de méthodlogie (en anglais) pour pratiquer après.
+
 </Notes>

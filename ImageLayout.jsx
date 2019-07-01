@@ -1,18 +1,29 @@
 import React from "react";
 import { Image } from "mdx-deck";
 
-export function ImageLayout({ src, children }) {
-  console.log(image);
+export function ImageLayout({ src, children, opacity = 1 }) {
   return (
-    <Image
-      src={src}
+    <div
       style={{
         display: "flex",
+        flexDirection: "column",
         justifyContent: "center",
-        alignItems: "center"
+        alignItems: "center",
+        padding: "0 80px",
+        textAlign: "left"
       }}
     >
-      {children}
-    </Image>
+      <Image
+        src={src}
+        style={{
+          opacity: opacity,
+          position: "absolute",
+          zIndex: 0,
+          width: "100vw",
+          height: "100vh"
+        }}
+      />
+      <div style={{ position: "relative", zIndex: 10 }}>{children}</div>
+    </div>
   );
 }
