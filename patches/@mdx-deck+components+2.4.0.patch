@@ -1,0 +1,47 @@
+diff --git a/node_modules/@mdx-deck/components/src/Keyboard.js b/node_modules/@mdx-deck/components/src/Keyboard.js
+index 543ddb8..9c572e8 100644
+--- a/node_modules/@mdx-deck/components/src/Keyboard.js
++++ b/node_modules/@mdx-deck/components/src/Keyboard.js
+@@ -77,5 +77,42 @@ export default props => {
+       window.removeEventListener('keydown', handler)
+     }
+   }, [props.metadata])
++
++  useEffect(() => {
++    const handler = e => {
++      const xStart = e.pageX
++      const TOLERANCE = 200 // px
++      const MIN_DISTANCE = 200 // px
++
++      if (xStart <= TOLERANCE) {
++        const onEnd = e => {
++          const xEnd = e.pageX
++          document.body.removeEventListener('mouseup', onEnd)
++          if (xEnd - xStart >= MIN_DISTANCE) {
++            props.previous()
++          }
++        }
++        document.body.addEventListener('mouseup', onEnd)
++      }
++
++      if (window.innerWidth - xStart <= TOLERANCE) {
++        const onEnd = e => {
++          const xEnd = e.pageX
++          document.body.removeEventListener('mouseup', onEnd)
++          if (xStart - xEnd >= MIN_DISTANCE) {
++            props.next()
++          }
++        }
++        document.body.addEventListener('mouseup', onEnd)
++      }
++    }
++
++    document.body.addEventListener('mousedown', handler)
++
++    return () => {
++      document.body.removeEventListener('mousedown', handler)
++    }
++  }, [props.metadata])
++
+   return false
+ }
