@@ -11,6 +11,7 @@ export const theme = {
   colors: {
     text: "#fff",
     background: "#132638",
+    backgroundLight: "rgba(19, 38, 56, 0.9)",
     link: "#df422d"
   },
   Slide: {
