@@ -1,17 +1,23 @@
 import React from "react";
 import { ImageLayout } from "./ImageLayout";
 
-export function ExamplesLayout({ children, backgroundSrc, backgroundOpacity }) {
+export function ExamplesLayout({
+  children,
+  backgroundSrc,
+  backgroundSize,
+  backgroundOpacity = 0.3
+}) {
   console.log(children);
   let childrenn = Array.isArray(children) ? children : [children];
   console.log(childrenn);
 
   return (
     <ImageLayout
-      style={{ textAlign: "left" }}
+      style={{ textAlign: "left", justifyContent: "flex-end", height: "90vh" }}
       className="definition-layout"
       src={backgroundSrc}
       opacity={backgroundOpacity}
+      size={backgroundSize}
     >
       <div style={{ textAlign: "center" }}>
         {childrenn.map(child => {

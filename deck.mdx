@@ -39,12 +39,7 @@ export { theme } from "./theme";
 <div>
 
 - 4ans graphiste web
-- 2ans développeur / designer
-
-* intéressé par
-  l'intersection entre le design et le code
-* art génératif
-* escalade
+- 2ans développeur / designer chez Nartez
 
 </div>
 </div>
@@ -61,18 +56,6 @@ Y'a-til des designers dans la salle ?
 Y'a-til des développeurs dans la salle ?
 
 </Notes>
-
----
-
-<div
-  style={{ backgroundColor: "white", padding: "40px", display: "inline-block" }}
->
-  <img src="./nartex.png" />
-</div>
-
-- bâtisseur d'applications mobiles à Mulhouse
-- plus de 200 références
-- tourisme, industrie, BtoB…
 
 ---
 
@@ -108,16 +91,20 @@ exemples (et oui haha je serais pas tout seul à parler)
 ---
 
 <ImageLayout
-  src="./vocabulary.gif"
+  src="./dimensions.gif"
   opacity={0.3}
 >
 
-# Fournir un vocabulaire partagé
+# Pourquoi ?
 
-- Conçue pour une évaluation en surface
-- Évalue l'ergonomie
-  - d'une interface utilisateur
-  - d'un language de programmation
+- Évaluer l'ergonomie
+- d'une interface utilisateur
+- d'un language de programmation
+
+# Par quel moyen
+
+- Avec 14 critères
+- Pose des mots sur des concepts
 
 </ImageLayout>
 
@@ -135,7 +122,7 @@ C'est important d'avoir un vocabulaire partagé. Par exemple la notion de télé
 ---
 
 <DefinitionLayout
-  backgroundSrc="./dimensions.gif"
+  backgroundSrc="./radar-graph.png"
   backgroundOpacity={0.3}
   title="Dimensions"
   translation="→ Axes d'évaluation"
@@ -160,13 +147,10 @@ Beaucoup de choses qu'on fait déjà instinctivement en design / bonnes pratique
   backgroundSrc="./brain.gif"
   backgroundOpacity={0.3}
   title="Cognitif"
-  translation="→ En rapport avec le cerveau 😅"
+  translation="→ En rapport avec le cerveau"
 >
 
-- Méthodologie conçue par des chercheurs en sciences cognitives
-- Thomas R.G. Green and Marian Petre
-- Fin des années 90
-- Destinée à un public large
+- Fortement lié à nos méchanismes cognitifs
 
 </DefinitionLayout>
 
@@ -266,10 +250,14 @@ Désolé pour les traductions un peu chelou depuis l'anglais. J'ai gardé le mot
   backgroundSrc="./viscosity1.gif"
   backgroundOpacity={0.3}
   num={1}
-  title="Viscosité"
-  translation="Résistance au changement"
+  title="Viscosité / Fluidité"
+  translation="Viscosity / Fluidity"
 >
-  L'effort requis pour apporter une modification
+
+L'effort requis pour apporter une modification
+
+Résistance au changement
+
 </DefinitionLayout>
 
 <Notes>
@@ -282,7 +270,7 @@ Désolé pour les traductions un peu chelou depuis l'anglais. J'ai gardé le mot
 
 ---
 
-<ExamplesLayout backgroundSrc="background2.png" backgroundOpacity={0.5}>
+<ExamplesLayout backgroundSrc="word-theme.png" backgroundOpacity={0.3}>
 
 Changer la couleur de tous les titres dans Word VS Styles globaux
 
@@ -290,7 +278,7 @@ Changer la couleur de tous les titres dans Word VS Styles globaux
 
 ---
 
-<ExamplesLayout backgroundSrc="background2.png" backgroundOpacity={0.5}>
+<ExamplesLayout backgroundSrc="oauth.png" backgroundOpacity={0.3}>
 
 Processus d'inscription à rallonge VS
 Authentification tierce
@@ -299,7 +287,7 @@ Authentification tierce
 
 ---
 
-<ExamplesLayout backgroundSrc="background2.png" backgroundOpacity={0.5}>
+<ExamplesLayout backgroundSrc="edit-in-place.png" backgroundOpacity={0.3}>
 
 Editer en lieu et place VS Changer de page
 
@@ -313,7 +301,12 @@ Editer en lieu et place VS Changer de page
 
 ---
 
-<DefinitionLayout num={2} title="Visibilité" translation="Visibility">
+<DefinitionLayout
+  backgroundSrc="searching.gif"
+  num={2}
+  title="Visibilité"
+  translation="Visibility"
+>
   Avec quelle facilité l'utilisateur va pouvoir accéder, identifier et rendre
   visibles les éléments dont il a besoin ?
 </DefinitionLayout>
@@ -326,7 +319,7 @@ Editer en lieu et place VS Changer de page
 
 ---
 
-<ExamplesLayout backgroundSrc="background2.png" backgroundOpacity={0.5}>
+<ExamplesLayout backgroundSrc="facebook-menus.png" backgroundSize="contain">
 
 Hamburger menu VS Bottom menu
 
@@ -344,6 +337,7 @@ Hamburger menu VS Bottom menu
   num={3}
   title="Engagement prématuré"
   translation="Premature commitment"
+  backgroundSrc="handcuff.gif"
 >
 
 L'utilisateur doit-il prendre des décisions avant même d'avoir toutes les informations nécessaires ?
@@ -364,25 +358,25 @@ Si cela arrive quand même, est-ce que les choses ont bien été réfléchies du
 
 ---
 
-<ExamplesLayout backgroundSrc="background2.png" backgroundOpacity={0.5}>
+<ExamplesLayout backgroundSrc="declaration-impots-en-ligne.jpg">
+
+Processus trop linéaire
+
+</ExamplesLayout>
+
+---
+
+<ExamplesLayout backgroundSrc="periode-essai.png" backgroundOpacity={0.5}>
+
+Acheter un logiciel sans tester VS période d'essai gratuite
+
+</ExamplesLayout>
+
+---
+
+<ExamplesLayout backgroundSrc="abort.gif" backgroundOpacity={0.5}>
 
 Actions irremédiables VS Bouton "annuler"
-
-</ExamplesLayout>
-
----
-
-<ExamplesLayout backgroundSrc="background2.png" backgroundOpacity={0.5}>
-
-Processus trop contraint / linéarisé
-
-</ExamplesLayout>
-
----
-
-<ExamplesLayout backgroundSrc="background2.png" backgroundOpacity={0.5}>
-
-Acheter sans tester VS période d'essai gratuite
 
 </ExamplesLayout>
 
@@ -403,6 +397,8 @@ Acheter sans tester VS période d'essai gratuite
   num={4}
   title="Relations cachées"
   translation="Hidden dependencies"
+  backgroundSrc="cat-light-switch.gif"
+  backgroundOpacity={0.4}
 >
 
 Les relations entre les éléments sont-elles visibles ou cachées ?
@@ -423,7 +419,7 @@ Si plusieurs parties d'un système dépendent l'une de l'autre, cette relation n
 
 ---
 
-<ExamplesLayout backgroundSrc="background2.png" backgroundOpacity={0.5}>
+<ExamplesLayout backgroundSrc="excel-spreadsheet.png">
   Dépendance d'une cellule dans Excel VS Impact de cette cellule sur d'autres
 </ExamplesLayout>
 
@@ -439,11 +435,14 @@ Tandis que dans l'autre sens, on ne sait pas quels impact elle a sur d'autres
 
 <DefinitionLayout
   num={5}
-  title="Expressivité des rôles"
+  title="Évidence"
   translation="Roles expressiveness"
+  backgroundSrc="tide-pod.gif"
 >
 
-Quel est le niveau d'évidence du rôle de chaque élément dans le système ?
+Est-ce que c'est évident ce que fait chaque élément dans le système ?
+
+Le rôle d'un élément doit être évident, ou du moins facilement et rapidement inferré par l'utilisateur
 
 </DefinitionLayout>
 
@@ -459,15 +458,15 @@ L'utilisateur ne devrait pas être confus quand à l'utilisation des éléments.
 
 ---
 
-<ExamplesLayout backgroundSrc="background2.png" backgroundOpacity={0.5}>
+<ExamplesLayout backgroundSrc="title-vs-links2.png" backgroundOpacity={0.3}>
 
-Confusion entre Titres soulignés et Liens
+Liens VS Titres soulignés
 
 </ExamplesLayout>
 
 ---
 
-<ExamplesLayout backgroundSrc="background2.png" backgroundOpacity={0.5}>
+<ExamplesLayout backgroundSrc="cancel-cancel.png" backgroundSize="contain">
 
 Texte des boutons peu explicites
 
@@ -477,8 +476,9 @@ Texte des boutons peu explicites
 
 <DefinitionLayout
   num={6}
-  title="Invitation aux erreur"
+  title="Invitation à l'erreur"
   translation="Error proneness"
+  backgroundSrc="wrong-answer.gif"
 >
 
 En quelles proportions la notation donne-t-elle la possibilité de faire des erreurs ?
@@ -498,31 +498,23 @@ Il faut savoir prendre en compte les limitations humaines.
 
 ---
 
-<ExamplesLayout backgroundSrc="background2.png" backgroundOpacity={0.5}>
+<ExamplesLayout backgroundSrc="missile-alert.jpg" backgroundOpacity={0.5}>
 
-Zones d'actions trop proches et / ou de petite taille
+Trop faibles différenciations
 
-</ExamplesLayout>
-
----
-
-<ExamplesLayout backgroundSrc="background2.png" backgroundOpacity={0.5}>
-
-Incohérences (iversion de la position des boutons "valider" et "annuler")
+Zones d'actions trop proches et / ou de petite taille…
 
 </ExamplesLayout>
 
----
+<Notes>
 
-<ExamplesLayout backgroundSrc="background2.png" backgroundOpacity={0.5}>
+Incohérences (inversion de la position des boutons "valider" et "annuler")
 
-Trop faible différenciation
-
-</ExamplesLayout>
+</Notes>
 
 ---
 
-<DefinitionLayout num={7} title="Niveau d'abstraction" translation="Abstraction gradient">
+<DefinitionLayout num={7} title="Niveau d'abstraction" translation="Abstraction gradient" backgroundSrc="Prim_clockwork.jpg">
 
 Plusieurs éléments qui groupés ensemble peuvent alors être traités comme un seul.
 
@@ -544,35 +536,22 @@ Permet de réduire d'autres axes, comme la viscosité
 
 ---
 
-<ExamplesLayout backgroundSrc="background2.png" backgroundOpacity={0.5}>
+<ExamplesLayout backgroundSrc="address-book.png">
 
-Feuille de style (dans Word)
-
-</ExamplesLayout>
-
----
-
-<ExamplesLayout backgroundSrc="background2.png" backgroundOpacity={0.5}>
-
-Renseigner l'adresse à chaque commande VS Sélectionner parmi des adresse pré-remplies (Amazon)
+Renseigner l'adresse à chaque commande VS Sélectionner parmi des adresse pré-remplies
 
 </ExamplesLayout>
 
----
+<Notes>
 
-<ExamplesLayout backgroundSrc="background2.png" backgroundOpacity={0.5}>
+Des exemples ?
 
-Les symboles dans Sketch
+- Les numéros de téléphone dans contact
+- Feuille de style (dans Word)
+- Les symboles dans Sketch
+- Les blocs dans WordPress Gutenberg
 
-</ExamplesLayout>
-
----
-
-<ExamplesLayout backgroundSrc="background2.png" backgroundOpacity={0.5}>
-
-Les blocs dans WordPress Gutenberg
-
-</ExamplesLayout>
+</Notes>
 
 ---
 
@@ -580,6 +559,7 @@ Les blocs dans WordPress Gutenberg
   num={8}
   title="Notation secondaire"
   translation="Secondary notation and escape from formalism"
+  backgroundSrc="manual-annotation.png"
 >
   La notation permet-elle d'apporter des informations complémentaires sans en
   transformer la nature ?
@@ -595,7 +575,7 @@ On va parler de mise-en-page, de couleur, d'annotations…
 
 ---
 
-<ExamplesLayout backgroundSrc="background2.png" backgroundOpacity={0.5}>
+<ExamplesLayout backgroundSrc="mise-en-page.png" backgroundOpacity={0.5}>
 
 Tout condenser dans un paragraphe VS Sauter à la ligne et ajouter des titres
 
@@ -603,17 +583,19 @@ Tout condenser dans un paragraphe VS Sauter à la ligne et ajouter des titres
 
 ---
 
-<ExamplesLayout backgroundSrc="background2.png" backgroundOpacity={0.5}>
+<ExamplesLayout backgroundSrc="actions-highlight.png">
 
-Commentaires et annotations dans les PDF, écrire du texte en rouge dans un Word
+Commentaires et annotations dans les PDF
+
+Écrire du texte en rouge dans un Word
 
 </ExamplesLayout>
 
 ---
 
-<ExamplesLayout backgroundSrc="background2.png" backgroundOpacity={0.5}>
+<ExamplesLayout backgroundSrc="file-naming.png" backgroundOpacity={0.5}>
 
-Nommer ses calques, Ajouter des icônes
+Nommer ses fichiers, Ajouter des icônes
 
 </ExamplesLayout>
 
@@ -623,6 +605,7 @@ Nommer ses calques, Ajouter des icônes
   num={9}
   title="Proximité de la correspondance"
   translation="Closeness of mapping"
+  backgroundSrc="metro-map.png"
 >
   Dans quelle mesure la notation correspond-elle à ce qu'elle représente ?
 </DefinitionLayout>
@@ -637,23 +620,23 @@ Et moins de traduction / correspondance à faire dans son esprit.
 
 ---
 
-<ExamplesLayout backgroundSrc="background2.png" backgroundOpacity={0.5}>
+<ExamplesLayout backgroundSrc="gutemberg.png">
 
-Écrire son propre Html VS Utiliser WordPress Gutenberg
-
-</ExamplesLayout>
-
----
-
-<ExamplesLayout backgroundSrc="background2.png" backgroundOpacity={0.5}>
-
-Un tracé sur la carte VS Des coordonnées GPS
+Écrire son propre Html VS Utiliser WordPress Gutenberg (WYSIWYG)
 
 </ExamplesLayout>
 
 ---
 
-<ExamplesLayout backgroundSrc="background2.png" backgroundOpacity={0.5}>
+<ExamplesLayout backgroundSrc="map-initenraire.png">
+
+Un tracé sur la carte VS Des instructions
+
+</ExamplesLayout>
+
+---
+
+<ExamplesLayout backgroundSrc="date-picker.png">
 
 Un calendrier VS Un champ texte pour une date
 
@@ -661,7 +644,12 @@ Un calendrier VS Un champ texte pour une date
 
 ---
 
-<DefinitionLayout num={10} title="Cohérence" translation="Consistency">
+<DefinitionLayout
+  num={10}
+  title="Cohérence"
+  translation="Consistency"
+  backgroundSrc="suite-logique.png"
+>
   Une fois qu'une partie de la notation est apprise, avec quelle facilité le
   reste peut-il être deviné ?
 </DefinitionLayout>
@@ -678,21 +666,16 @@ Plus c'est cohérent, moins l'utilisateur n'aura a réfléchir pour inferrer les
 
 ---
 
-<ExamplesLayout backgroundSrc="background2.png" backgroundOpacity={0.5}>
+<ExamplesLayout backgroundSrc="inconsistent-buttons.jpg" backgroundOpacity={0.5} backgroundSize="contain">
 
-Apparence des boutons changeante VS constante
-
-</ExamplesLayout>
-
----
-
-<ExamplesLayout backgroundSrc="background2.png" backgroundOpacity={0.5}>
-
-Position du menu, transitions de navigation / animations
+Constance de l'apparence et de la position des boutons
 
 </ExamplesLayout>
 
 <Notes>
+
+- Position du menu
+- transitions de navigation / animations
 
 Tout ce qui va surprendre / venir perturber les habitudes = mauvais
 
@@ -704,9 +687,11 @@ Tout ce qui va surprendre / venir perturber les habitudes = mauvais
   num={11}
   title="Concision / Diffusion"
   translation="Terseness / Diffuseness"
+  backgroundSrc="foggy.gif"
+  backgroundOpacity={0.4}
 >
-  Faut-il beaucoup de symboles pour produire un résultat ou exprimer
-  quelquechose ?
+  Faut-il beaucoup de symboles pour produire un résultat ou
+  exprimer quelquechose ?
 </DefinitionLayout>
 
 <Notes>
@@ -719,39 +704,21 @@ Plus c'est concis, mieux c'est ;) Mais forcément ça peut impliquer des impacts
 
 ---
 
-<ExamplesLayout backgroundSrc="background2.png" backgroundOpacity={0.5}>
-
-Message d'erreur bref et contextuel VS Message d'erreur flou et avec excuses et excès de politesse
-
-</ExamplesLayout>
-
----
-
-<ExamplesLayout backgroundSrc="background2.png" backgroundOpacity={0.5}>
-
-Menu déroulant pour une date, menu déroulant pour OUI/NON VS Calendrier, checkbox…
-
-</ExamplesLayout>
-
----
-
-<ExamplesLayout backgroundSrc="background2.png" backgroundOpacity={0.5}>
+<ExamplesLayout backgroundSrc="hard-password.png" backgroundOpacity={0.5}>
 
 Des instructions pour mot de passe verbeuses VS Un indicateur de sécurité
 
 </ExamplesLayout>
 
----
-
-<ExamplesLayout backgroundSrc="background2.png" backgroundOpacity={0.5}>
-
-Trop de photo et d'espace inutiles
-
-</ExamplesLayout>
-
 <Notes>
-  On remarque que la proximité de correspondance, faire des abstractions,
-  utiliser des notations secondaires peuvent aider à ce propos
+
+- Menu déroulant pour une date, menu déroulant pour OUI/NON VS Calendrier, checkbox… (rejoint closeness of mapping)
+- Message d'erreur bref et contextuel VS Message d'erreur flou et avec excuses et excès de politesse
+- Trop de photo et d'espace inutiles
+
+On remarque que la proximité de correspondance, faire des abstractions,
+utiliser des notations secondaires peuvent aider à ce propos
+
 </Notes>
 
 ---
@@ -760,6 +727,8 @@ Trop de photo et d'espace inutiles
   num={12}
   title="Opérations mentales difficiles"
   translation="Hard mental operations"
+  backgroundSrc="hard-mental-operations2.gif"
+  backgroundSize="contain"
 >
 
 Y'a-t-il du calcul mental compliqué à accomplir pour l'utilisateur, qui serait du à la notation elle-même ?
@@ -782,21 +751,36 @@ Genre faut pas que la personne ait l'impression de rsoudre un sudoku
 
 ---
 
-<ExamplesLayout backgroundSrc="background2.png" backgroundOpacity={0.5}>
+<ExamplesLayout backgroundSrc="password-postit.png" backgroundOpacity={0.5}>
 
-Composer un numéro de téléphone depuis la mémoire VS Utiliser le carnet d'adresse
+Retenir un mot de passe
 
 </ExamplesLayout>
 
 ---
 
-<DefinitionLayout num={13} title="États provisoires, explorabilité" translation="Provisionability">
+<ExamplesLayout backgroundSrc="compose-number.gif" backgroundOpacity={0.5}>
+
+Composer un numéro de téléphone de mémoire VS Utiliser le carnet d'adresse
+
+</ExamplesLayout>
+
+<Notes>
+
+- Calculer la TVA
+- La somme du panier avec livraison…
+
+</Notes>
+
+---
+
+<DefinitionLayout num={13} title="Exploration" translation="Provisionability" backgroundSrc="explorability.gif">
 
 La capacité avec laquelle il est possible d'expérimenter avec le système
 
 Avec quelle aisance peut-on tester, jouer, explorer ?
 
-Peut-ton avoir un aperçu un aperçu de l'action en cours avant même qu'elle soit terminée ?
+Peut-ton avoir un aperçu de l'action en cours avant même qu'elle soit terminée ?
 
 </DefinitionLayout>
 
@@ -808,19 +792,25 @@ C'est clairement un point très positif à avoir (selon les objectifs bien sûr)
 
 ---
 
-<ExamplesLayout backgroundSrc="background2.png" backgroundOpacity={0.5}>
+<ExamplesLayout backgroundSrc="explorabilité.png" backgroundOpacity={0.5}>
 
-Drag and Drop avec aperçu du résultat en temps réel
+Possibilité de dupliquer, de revenir en arrière, de conserver des états antérieurs
 
 </ExamplesLayout>
 
 ---
 
-<ExamplesLayout backgroundSrc="background2.png" backgroundOpacity={0.5}>
+<ExamplesLayout backgroundSrc="react-beautiful-drag-n-drop.gif" backgroundOpacity={0.5} backgroundSize="contain">
 
-Possibilité de revenir en arrière, de conserver des états antérieurs
+Drag and Drop avec aperçu du résultat en temps réel
 
 </ExamplesLayout>
+
+<Notes>
+
+Panier, wishlist
+
+</Notes>
 
 ---
 
@@ -828,6 +818,7 @@ Possibilité de revenir en arrière, de conserver des états antérieurs
   num={14}
   title="Évaluation progressive"
   translation="Progressive evaluation"
+  backgroundSrc="cardboard-prototype.gif"
 >
 
 Avec quelle aisance peut-on évaluer et obtenir des retours d'une solution incomplète ?

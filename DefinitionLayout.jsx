@@ -8,7 +8,8 @@ export function DefinitionLayout({
   translation,
   children,
   backgroundSrc,
-  backgroundOpacity
+  backgroundSize,
+  backgroundOpacity = 0.3
 }) {
   console.log(children);
   let childrenn = Array.isArray(children) ? children : [children];
@@ -19,6 +20,7 @@ export function DefinitionLayout({
       style={{ textAlign: "left" }}
       className="definition-layout"
       src={backgroundSrc}
+      size={backgroundSize}
       opacity={backgroundOpacity}
     >
       <h1 style={{ position: "relative" }}>
