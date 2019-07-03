@@ -5,7 +5,7 @@ export function ExamplesLayout({
   children,
   backgroundSrc,
   backgroundSize,
-  backgroundOpacity = 0.3
+  backgroundOpacity = 0.1
 }) {
   console.log(children);
   let childrenn = Array.isArray(children) ? children : [children];
@@ -18,6 +18,7 @@ export function ExamplesLayout({
       src={backgroundSrc}
       opacity={backgroundOpacity}
       size={backgroundSize}
+      appear
     >
       <div style={{ textAlign: "center" }}>
         {childrenn.map(child => {

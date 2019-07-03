@@ -1,7 +1,15 @@
 import React from "react";
-import { Image } from "mdx-deck";
+import { theme } from "./theme.js";
+import { Image, Appear } from "mdx-deck";
 
-export function ImageLayout({ src, children, opacity = 1, size, style }) {
+export function ImageLayout({
+  src,
+  children,
+  opacity = 1,
+  size,
+  style,
+  appear = false
+}) {
   return (
     <div
       style={{
@@ -27,6 +35,23 @@ export function ImageLayout({ src, children, opacity = 1, size, style }) {
         size={size || "cover"}
       />
       <div style={{ position: "relative", zIndex: 10 }}>{children}</div>
+
+      {appear && (
+        <Appear>
+          <Image
+            src={src}
+            style={{
+              position: "absolute",
+              zIndex: 20,
+              top: 0,
+              width: "100vw",
+              height: "100vh",
+              backgroundColor: theme.colors.background
+            }}
+            size={size || "cover"}
+          />
+        </Appear>
+      )}
     </div>
   );
 }
